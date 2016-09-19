@@ -2,9 +2,6 @@
 
 session_start();
 
-//Username:test
-//Password:test
-
 if(!empty($_POST)) {
 	$isim = $_POST['login'];
 	$sifre = $_POST['password'];
