@@ -1,4 +1,4 @@
-//Per compilare: gcc -ggdb -Wall -Wextra -o prova server.c -lcrypto
+//Per compilare: gcc -ggdb -Wall -Wextra -o server server.c -lcrypto
 
 #include <stdio.h>
 #include <stdlib.h>

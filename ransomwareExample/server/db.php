@@ -1,8 +1,8 @@
 
 <?php
 
-$connection = new PDO('mysql:host=localhost;dbname=panel;charset=utf8', 'dbusername', 'password');
+$connection = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8', 'root', 'prova');
 $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//table name = dummy
-$q = $connection->query('SELECT * FROM dummy');
+$q = $connection->query('SELECT * FROM chiavi');
+
 ?>
